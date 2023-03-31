@@ -19,7 +19,6 @@ public class Main
 
     {
         m.addDrink("Tea", 200, 50);
-        // m.addProduct("Snikers", 50);
         m.addDrink("Coffee", 200, 100,);
         System.out.println(m.getDrinkByPrice(50).toString());
         System.out.println(m.getDrinkByname("Coca-cola").toString());

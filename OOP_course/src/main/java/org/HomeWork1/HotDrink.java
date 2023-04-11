@@ -5,6 +5,7 @@ public abstract class HotDrink
     protected String name;
     protected int volume;
     protected double cost;
+    private int temperature;
 
     public String getName()
     {
@@ -28,6 +29,14 @@ public abstract class HotDrink
         this.name = name;
         this.volume = volume;
         this.cost = cost;
+    }
+    @Override
+    HotDrink(String name, int volume, int cost, int temperature)
+    {
+        this.name = name;
+        this.volume = volume;
+        this.cost = cost;
+        this.temperature = temperature;
     }
 
         public void getDrink(String name, int volume, int cost)
